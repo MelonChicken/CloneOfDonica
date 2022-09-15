@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap");
+
+body {
+  width: 100%;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  font-family: "Bitter", serif;
+  align-items: center;
+}
+header {
+  width: 94%;
+  height: 47vh;
+  padding-top: 3vh;
+
+  font-size: 6.51vh;
+}
+section {
+  width: 94%;
+  height: max-content;
+  display: grid;
+  grid-template-columns: 2fr 8fr 13.5fr;
+  grid-template-rows: 4.3vh minmax(max-content, 9.9vh);
+  grid-auto-rows: minmax(max-content, 9.9vh);
+  row-gap: 0.1vh;
+  background-color: black;
+}
+.rowBox {
+  grid-column: 1/-1;
+  grid-row: span 1;
+
+  display: grid;
+  grid-template-columns: 2.3fr 8.5fr 13fr;
+}
+.rowBox:hover:not(:nth-child(1)) {
+  font-style: italic;
+  color: darkblue;
+}
+.yearTable,
+.clientTable,
+.projectTable {
+  grid-column: span 1;
+  grid-row: span 1;
+
+  font-weight: 600;
+
+  background-color: white;
+}
+.cell {
+  grid-column: span 1;
+  grid-row: span 1;
+
+  display: flex;
+  align-items: center;
+  padding-top: 1vh;
+  font-size: 3.6vh;
+
+  background-color: white;
+}
+.cell:nth-child(3) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.textBox {
+  width: 94%;
+  font-weight: 400;
+  font-size: 4.5vh;
+}
+#littleText {
+  font-size: 1.5vh;
+  font-weight: 600;
+  color: gray;
+}
